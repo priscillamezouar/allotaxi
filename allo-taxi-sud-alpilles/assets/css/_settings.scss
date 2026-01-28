@@ -1,0 +1,125 @@
+// COLORS
+$bg: #f4f4f4;
+$bg-card: #fff;
+$black: #000;
+$border: #d9d9d9;
+$blackShadow: rgba(0, 0, 0, 0.4);
+$color1: #fedd59;
+$glass: rgba(255, 255, 255, 0.2);
+$text: #333;
+$textLight: #f4f4f4;
+$title: #000;
+$white: #fff;
+
+// FONTS
+$bodyFont:
+    "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+$headingFont:
+    "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+// GENERAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $bodyFont;
+    color: $text;
+    font-size: 14px;
+    cursor: default;
+    transition: 0.2s ease;
+    font-weight: 300;
+    user-select: none;
+}
+
+body {
+    background: $bg;
+}
+
+section {
+    padding: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headingFont;
+    color: $title !important;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $text;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    * {
+        cursor: pointer;
+    }
+}
+
+button {
+    background: $color1;
+    border-radius: 5px;
+    border: 1px solid $color1;
+    padding: 5px 30px 3px;
+    box-shadow: 0 0 5px $blackShadow;
+    color: $black;
+
+    &:hover {
+        box-shadow: inset 0 0 5px $black;
+    }
+}
+
+.df {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.aic {
+    align-items: center;
+}
+
+.fdc {
+    flex-direction: column;
+}
+
+.btn-glass {
+    background: $glass;
+    border: 1px solid $textLight;
+    color: $white;
+    text-shadow: 0 0 5px $blackShadow;
+}
+
+.card {
+    background: $bg-card;
+    box-shadow: 0 0 5px $blackShadow;
+    border-radius: 10px;
+}

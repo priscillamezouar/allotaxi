@@ -1,0 +1,68 @@
+@use "settings";
+
+header {
+    padding: 20px;
+    box-shadow: 0 0 10px settings.$blackShadow;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: settings.$bg;
+    width: 100%;
+
+    .logo {
+        max-height: 50px;
+    }
+
+    .icons-nav {
+        display: none;
+
+        @media screen and (max-width: 992px) {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        * {
+            font-size: 22px;
+        }
+
+        #closeIcon {
+            display: none;
+        }
+
+        .button-phone {
+            padding: 10px;
+
+            i {
+                color: settings.$black;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 30px;
+            border-top: 1px solid settings.$border;
+        }
+    }
+
+    .button-reserved {
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+}
