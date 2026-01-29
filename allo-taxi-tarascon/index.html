@@ -42,7 +42,7 @@
     </head>
     <body>
         <header>
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Accueil">
                 <img
                     src="./assets/images/logo.png"
                     class="logo"
@@ -50,8 +50,8 @@
             </a>
 
             <div class="icons-nav">
-                <a href="tel:+33609958676">
-                    <button class="button-phone">
+                <a href="tel:+33609958676" aria-label="Téléphone">
+                    <button class="button-phone" title="Appelez maintenant">
                         <i class="bi bi-telephone-fill"></i>
                     </button>
                 </a>
@@ -60,13 +60,24 @@
             </div>
 
             <nav>
-                <a href="./index.html">Accueil</a>
-                <a href="./index.html#nos-services">Nos services</a>
-                <a href="./index.html#notre-groupe">Notre groupe</a>
-                <a href="./index.html#notre-groupe">Demander un devis</a>
+                <a href="./index.html" aria-label="Accueil">Accueil</a>
+                <a href="./index.html#nos-services" aria-label="Nos services"
+                    >Nos services</a
+                >
+                <a href="./index.html#notre-groupe" aria-label="Notre groupe"
+                    >Notre groupe</a
+                >
+                <a
+                    href="./index.html#notre-groupe"
+                    aria-label="Demander un devis"
+                    >Demander un devis</a
+                >
             </nav>
 
-            <a href="tel:+33609958676" class="button-reserved"
+            <a
+                href="tel:+33609958676"
+                class="button-reserved"
+                aria-label="Téléphone"
                 ><button>Réserver un taxi</button></a
             >
         </header>
@@ -84,10 +95,10 @@
                     </p>
 
                     <div class="df aic">
-                        <a href="tel:+33609958676"
+                        <a href="tel:+33609958676" aria-label="Téléphone"
                             ><button>Réserver un taxi</button></a
                         >
-                        <a href="#nos-services"
+                        <a href="#nos-services" aria-label="Nos services"
                             ><button class="btn-glass">Nos services</button></a
                         >
                     </div>
@@ -332,7 +343,7 @@
         <footer>
             <div class="widgets">
                 <div class="widget df fdc">
-                    <a href="./index.html">
+                    <a href="./index.html" aria-label="Accueil">
                         <img
                             src="./assets/images/logo.png"
                             alt="Logo Allo Taxi Tarascon"
@@ -346,37 +357,64 @@
 
                 <div class="widget df fdc">
                     <h2>Services</h2>
-                    <a href="./index.html/#nos-services">Transport médical</a>
-                    <a href="./index.html/#nos-services"
+                    <a
+                        href="./index.html/#nos-services"
+                        aria-label="Transport médical"
+                        >Transport médical</a
+                    >
+                    <a
+                        href="./index.html/#nos-services"
+                        aria-label="Transferts aéroports"
                         >Transferts aéroports</a
                     >
-                    <a href="./index.html/#nos-services"
+                    <a
+                        href="./index.html/#nos-services"
+                        aria-label="Circuits touristiques"
                         >Circuits touristiques</a
                     >
-                    <a href="./index.html/#nos-services">Évènements</a>
+                    <a href="./index.html/#nos-services" aria-label="Évènements"
+                        >Évènements</a
+                    >
                 </div>
 
                 <div class="widget df fdc">
                     <h2>Liens utiles</h2>
-                    <a href="./index.html#notre-groupe">Notre groupe</a>
-                    <a href="./index.html#nos-services">Nos services</a>
-                    <a href="./index.html#notre-groupe">Demander un devis</a>
-                    <a href="#">Mentions légales</a>
+                    <a
+                        href="./index.html#notre-groupe"
+                        aria-label="Notre groupe"
+                        >Notre groupe</a
+                    >
+                    <a
+                        href="./index.html#nos-services"
+                        aria-label="Nos services"
+                        >Nos services</a
+                    >
+                    <a
+                        href="./index.html#notre-groupe"
+                        aria-label="Demander un devis"
+                        >Demander un devis</a
+                    >
+                    <a href="#" aria-label="Mentions légales"
+                        >Mentions légales</a
+                    >
                 </div>
 
                 <div class="widget df fdc">
                     <h2>Contact</h2>
-                    <a href="tel:+33609958676">
+                    <a href="tel:+33609958676" aria-label="Téléphone">
                         <i class="bi bi-telephone-fill"></i>
                         +33 (0)6 09 95 86 76
                     </a>
-                    <a href="mailto:contact@allo-taxi-tarascon.com">
+                    <a
+                        href="mailto:contact@allo-taxi-tarascon.com"
+                        aria-label="Email">
                         <i class="bi bi-envelope-fill"></i>
                         contact@allo-taxi-tarascon.com
                     </a>
                     <a
                         href="https://www.google.com/maps/place/Gare+de+Tarascon+SNCF/@43.8013908,4.6539431,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5ddebe2a82473:0x67dbda8fe65ae9!8m2!3d43.801387!4d4.656518!16s%2Fg%2F11mky5_tlh?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
-                        target="_blank">
+                        target="_blank"
+                        aria-label="Itinéraire Google Maps">
                         <i class="bi bi-geo-alt-fill"></i>
                         Tarascon
                     </a>
@@ -387,17 +425,20 @@
                     <div class="social-icons df aic">
                         <a
                             href="https://tiktok.com/@allotaxisud"
-                            target="_blank">
+                            target="_blank"
+                            aria-label="TikTok">
                             <i class="bi bi-tiktok"></i>
                         </a>
                         <a
                             href="https://instagram.com/allotaxisud"
-                            target="_blank">
+                            target="_blank"
+                            aria-label="Instagram">
                             <i class="bi bi-instagram"></i>
                         </a>
                         <a
                             href="https://facebook.com/allotaxisudalpilles"
-                            target="_blank">
+                            target="_blank"
+                            aria-label="Facebook">
                             <i class="bi bi-facebook"></i>
                         </a>
                     </div>
@@ -406,8 +447,15 @@
 
             <div class="copyright">
                 <p>
-                    ©2026 - Allo Taxi Tarascon - Site réalisé par
-                    <a href="https://priscillamezouar.github.io" target="_blank"
+                    ©2026 -
+                    <a href="./index.html" aria-label="Accueil"
+                        >Allo Taxi Tarascon</a
+                    >
+                    - Site réalisé par
+                    <a
+                        href="https://priscillamezouar.github.io"
+                        target="_blank"
+                        aria-label="Priscilla Mezouar"
                         >PM</a
                     >
                     - Tous droits réservés.
