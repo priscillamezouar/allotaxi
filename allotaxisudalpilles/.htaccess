@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Forcer HTTPS et enlever www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.allo-taxi-sud-alpilles\.fr$ [NC]
+RewriteRule ^ https://allo-taxi-sud-alpilles.fr%{REQUEST_URI} [L,R=301]
+
+# Pointer vers /allotaxisudalpilles
+RewriteCond %{REQUEST_URI} !^/allotaxisudalpilles/
+RewriteRule ^(.*)$ /allotaxisudalpilles/$1 [L]
